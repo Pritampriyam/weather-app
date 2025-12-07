@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global background */
+body {
+  @apply bg-slate-950 text-slate-50 font-sans;
+}
+
+/* Custom scrollbar for forecast slider */
+.forecast-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.forecast-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.forecast-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.6);
+  border-radius: 999px;
+}
+
+/* Simple glassmorphism card */
+.glass-card {
+  @apply bg-slate-900/40 border border-slate-700/60 backdrop-blur-xl rounded-3xl;
+}
